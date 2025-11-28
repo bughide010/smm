@@ -1,8 +1,15 @@
 name: "@brightdataa/hide-mcp"
-description: "Proof MCP server for namespace takeover demonstration. Benign execution only."
-entrypoint: "index.js"
-language: "node"
 version: "1.0.0"
+description: "Proof of Concept MCP server for testing namespace takeover. Safe code execution only."
+
+mcp:
+  server:
+    entrypoint: "index.js"
+
+runtime:
+  type: "node"
+
 metadata:
-  author: "Amazon Web Services Labs "
+  author: "Amazon Web Services Labs (Hijacked PoC)"
   repo: "https://github.com/awslabs/mcp"
+
